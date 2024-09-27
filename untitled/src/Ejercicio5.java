@@ -9,10 +9,10 @@ public class Ejercicio5 {
 
     public void ejecutar() {
 
-        float min = 0;
-        float num1 = 0;
+        float min;
+        float num1 = 1;
         float num2 = 0;
-        float num3 = 0;
+        float num3 = 1;
 
         Scanner entrada = new Scanner(System.in);
         System.out.println("Ejercicio 5: Numero minimo");
@@ -38,14 +38,14 @@ public class Ejercicio5 {
             }
 
         }
-        if (num1 < num2){
+        if ( num2 > num1 )
             min = num1;
-        }else{
+        else{
             min = num2;
         }
-        if (num1 <num3){
+        if (num1 < num3) {
             min = num1;
-        }else {
+        }else{
             min = num3;
         }
 
