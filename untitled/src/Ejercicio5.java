@@ -10,9 +10,9 @@ public class Ejercicio5 {
     public void ejecutar() {
 
         float min;
-        float num1 = 1;
+        float num1 = 0;
         float num2 = 0;
-        float num3 = 1;
+        float num3 = 0;
 
         Scanner entrada = new Scanner(System.in);
         System.out.println("Ejercicio 5: Numero minimo");
@@ -20,32 +20,29 @@ public class Ejercicio5 {
         while (num1 == num2 || num1 == num3 || num2 == num3) {
             try {
                 System.out.println("Introduce el primer numero");
-                num1 = entrada.nextLong();
+                num1 = entrada.nextFloat();
 
                 System.out.println("Introduce el segundo numero");
-                num2 = entrada.nextLong();
+                num2 = entrada.nextFloat();
 
                 System.out.println("Introduce el tercero numero");
-                num3 = entrada.nextLong();
+                num3 = entrada.nextFloat();
 
+                if (num1 == num2 || num1 == num3 || num2 == num3) {
+                    System.out.println("ERROR: hay números introducidos que son iguales");
+
+                }
             } catch (NumberFormatException | InputMismatchException | ArithmeticException e) {
                 System.out.println("ERROR: introduce un numero valido ");
                 entrada.nextLine();
+                continue;
             }
-            if (num1 == num2 || num1 == num3 || num2 == num3) {
-                System.out.println("ERROR: hay números introducidos que son iguales");
-
-            }
-
         }
-        if ( num2 > num1 )
-            min = num1;
-        else{
+        min = num1;
+        if (num2 < min) {
             min = num2;
         }
-        if (num1 < num3) {
-            min = num1;
-        }else{
+        if (num3 < min) {
             min = num3;
         }
 
