@@ -30,8 +30,11 @@ public class Main {
             //Ejercicio4 ejercicio4 = new Ejercicio4();
             //ejercicio4.ejecutar();
 
-            Ejercicio5 ejercicio5 = new Ejercicio5();
-            ejercicio5.ejecutar();
+            //Ejercicio5 ejercicio5 = new Ejercicio5();
+            //ejercicio5.ejecutar();
+
+            //Practica3 practica3 = new Practica3();
+            //practica3.ejecutar();
 
     }
 }

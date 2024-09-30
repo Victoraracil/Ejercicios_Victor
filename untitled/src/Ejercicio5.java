@@ -35,7 +35,6 @@ public class Ejercicio5 {
             } catch (NumberFormatException | InputMismatchException | ArithmeticException e) {
                 System.out.println("ERROR: introduce un numero valido ");
                 entrada.nextLine();
-                continue;
             }
         }
         min = num1;
@@ -49,3 +48,16 @@ public class Ejercicio5 {
         System.out.println(min + " es el numero mas pequeño");
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
