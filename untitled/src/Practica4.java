@@ -28,22 +28,32 @@ public class Practica4 {
                 entrada.nextLine();
             }
         }
-        int x = 2;
-        int z = 3;
-
-        while (z != 0) {
-            String numC = Integer.toString(num2); //convertimos el número a carácter
-            String numC_1 = numC.substring(x, z); //cogemos la primera cifra (desde posión 0 hasta 1)
-            int num_1 = Integer.parseInt(numC_1); //convertimos a entero la cifra que hemos cogido, con la que podríamos hacer algún cálculo que necesitemos
-            int res1 = num_1 * num1;//imprimimos el resultado
-
-            z = z - 1;
-            x = x - 1;
-
-            System.out.println(res1);
-        }
+        //int x = 2;    //z = z - 1;
+        //              //x = x - 1;
+        //int z = 3;
+        int resultado = num1 * num2;
 
 
+        String numC = Integer.toString(num2); //convertimos el número a carácter
+        String numC_1 = numC.substring(2, 3);
+        String numC_2 = numC.substring(1, 2);
+        String numC_3 = numC.substring(0, 1);//cogemos la primera cifra (desde posión 0 hasta 1)
+
+        int temp1 = Integer.parseInt(numC_1);
+        int temp2 = Integer.parseInt(numC_2);
+        int temp3 = Integer.parseInt(numC_3);
+
+        int rest1 = temp1 * num1;
+        int rest2 = temp2 * num1;
+        int rest3 = temp3 * num1;
+
+        System.out.println(resultado);
+        System.out.println(rest1);
+        System.out.println(rest2);
+        System.out.println(rest3);
+
+              
     }
 }
 //bucle donde segun sumo el numero, le multiplicacion cambia
+//parte grafica donde se muestre el proceso
