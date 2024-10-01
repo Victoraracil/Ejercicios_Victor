@@ -2,7 +2,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Practica3 {
-    public static void main(String[] args) { //creacion de clase
+    public void ejecutar() { //creacion de clase
 
         int edad = 0; //predefinir edad para las excepciones
         System.out.println("Como te llamas?");
