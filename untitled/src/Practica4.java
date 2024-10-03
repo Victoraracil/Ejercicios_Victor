@@ -17,10 +17,10 @@ public class Practica4 {
                 num2 = entrada.nextInt();
 
                 if (num1 < 100 || num2 < 100) {
-                    System.out.println("Solo puedes introducir numeros de 3 cifras positivos");
+                    System.out.println("ERROR. Solo puedes introducir numeros de 3 cifras positivos");//Error si no se introduce un numero de 3 cifras
                 }
                 if (num1 > 999 || num2 > 999) {
-                    System.out.println("Solo puedes introducir numeros de 3 cifras positivos");
+                    System.out.println("ERROR: Solo puedes introducir numeros de 3 cifras positivos");//Error si no se introduce un numero de 3 cifras
                 }
 
             } catch (NumberFormatException | InputMismatchException | ArithmeticException e) {
@@ -28,14 +28,11 @@ public class Practica4 {
                 entrada.nextLine();
             }
         }
-        //int x = 2;    //z = z - 1;
-        //              //x = x - 1;
-        //int z = 3;
         int resultado = num1 * num2;
 
         String numC = Integer.toString(num2); //convertimos el número a carácter
-        String numC_1 = numC.substring(2, 3);
-        String numC_2 = numC.substring(1, 2);
+        String numC_1 = numC.substring(2, 3);//cogemos la cifra necesaria
+        String numC_2 = numC.substring(1, 2);//cogemos la cifra necesaria
         String numC_3 = numC.substring(0, 1);//cogemos la primera cifra (desde posión 0 hasta 1)
 
         int temp1 = Integer.parseInt(numC_1);
@@ -63,5 +60,3 @@ public class Practica4 {
               
     }
 }
-//bucle donde segun sumo el numero, le multiplicacion cambia
-//parte grafica donde se muestre el proceso
